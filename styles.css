@@ -54,6 +54,12 @@ body {
     font-size: 1.8rem;
 }
 
+.nav-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
 .nav-menu {
     display: flex;
     gap: 2rem;
@@ -624,6 +630,12 @@ body {
 
 .footer-logo i {
     color: #FBBA01;
+    margin-right: 10px;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
     margin-right: 10px;
 }
 
