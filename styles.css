@@ -167,6 +167,39 @@ body {
     transform: translateY(-2px);
 }
 
+.btn-desktop {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.btn-desktop:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.desktop-buttons {
+    margin-top: 1rem;
+    gap: 0.7rem;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.download-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
 /* Phone Mockup */
 .phone-mockup {
     width: 300px;
@@ -544,7 +577,7 @@ body {
 
 /* CTA Section */
 .cta-content {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -701,7 +734,8 @@ body {
     }
 
     .hero-buttons,
-    .cta-buttons {
+    .cta-buttons,
+    .desktop-buttons {
         flex-direction: column;
         align-items: center;
     }
@@ -718,6 +752,11 @@ body {
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+    .download-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
 
@@ -746,6 +785,11 @@ body {
 
     .balance-amount {
         font-size: 2rem;
+    }
+
+    .desktop-buttons .btn {
+        font-size: 0.8rem;
+        padding: 0.7rem 1rem;
     }
 }
 
