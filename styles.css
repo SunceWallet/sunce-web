@@ -98,6 +98,8 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
+    padding-top: 70px;
+    /* Account for fixed navbar */
 }
 
 .hero-container {
@@ -396,7 +398,7 @@ body {
     direction: rtl;
 }
 
-.section-content.reverse > * {
+.section-content.reverse>* {
     direction: ltr;
 }
 
@@ -528,7 +530,7 @@ body {
 }
 
 .asset-icon.btc {
-    background: #f7931a;
+    background: #FBBA01;
 }
 
 .asset-info {
@@ -539,6 +541,7 @@ body {
 .asset-name {
     font-weight: 600;
     font-size: 0.9rem;
+    color: black;
 }
 
 .asset-amount {
@@ -592,10 +595,12 @@ body {
         transform: scale(1);
         opacity: 1;
     }
+
     50% {
         transform: scale(1.1);
         opacity: 0.7;
     }
+
     100% {
         transform: scale(1);
         opacity: 1;
@@ -736,14 +741,28 @@ body {
         display: flex;
     }
 
+    .hero {
+        padding-top: 90px;
+        /* More space on mobile */
+        min-height: calc(100vh - 20px);
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
+        padding: 0 15px;
     }
 
     .hero-title {
         font-size: 2.5rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
     }
 
     .section-content {
@@ -764,6 +783,23 @@ body {
     .phone-mockup-small {
         width: 200px;
         height: 400px;
+    }
+
+    /* Scale down phone mockup fonts on mobile */
+    .app-title h3 {
+        font-size: 1rem;
+    }
+
+    .balance-amount {
+        font-size: 2rem;
+    }
+
+    .action-btn i {
+        font-size: 1.2rem;
+    }
+
+    .action-btn span {
+        font-size: 0.8rem;
     }
 
     .hero-buttons,
@@ -798,8 +834,23 @@ body {
         padding: 0 15px;
     }
 
+    .hero {
+        padding-top: 100px;
+        /* Even more space on very small screens */
+    }
+
+    .hero-container {
+        padding: 0 10px;
+    }
+
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
     }
 
     .section-title {
@@ -812,17 +863,98 @@ body {
         height: 360px;
     }
 
+    /* Further scale down phone mockup content */
+    .app-preview {
+        padding: 15px;
+    }
+
+    .app-title h3 {
+        font-size: 0.75rem;
+    }
+
+    .app-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .status-bar {
+        font-size: 0.6rem;
+        margin-bottom: 0.8rem;
+    }
+
     .app-balance {
-        margin: 2rem 0;
+        margin: 1.5rem 0;
+    }
+
+    .balance-label {
+        font-size: 0.7rem;
     }
 
     .balance-amount {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .action-btn {
+        padding: 0.8rem 0.6rem;
+    }
+
+    .action-btn i {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .action-btn span {
+        font-size: 0.6rem;
+    }
+
+    /* Scale down other mockup screens too */
+    .invite-card h3 {
+        font-size: 1rem;
+    }
+
+    .invite-card p {
+        font-size: 0.8rem;
+    }
+
+    .invite-btn {
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .asset-name {
+        font-size: 0.7rem;
+        color: black;
+    }
+
+    .asset-amount {
+        font-size: 0.7rem;
+    }
+
+    .security-screen h3 {
+        font-size: 1rem;
+    }
+
+    .security-screen p {
+        font-size: 0.8rem;
     }
 
     .desktop-buttons .btn {
         font-size: 0.8rem;
         padding: 0.7rem 1rem;
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .nav-logo {
+        font-size: 1.3rem;
     }
 }
 
@@ -837,6 +969,7 @@ html {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
